@@ -839,7 +839,7 @@ margin:0;
 .campus-image {
     display: block;
     width: 95%;
-    max-width: 1400px;   /* Increase from 1200px */
+    max-width: 1400px;
     height: auto;
     margin: 30px auto;
     border-radius: 15px;
