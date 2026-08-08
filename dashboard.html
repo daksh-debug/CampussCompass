@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+
+    <h2>🎓 Campus Compass</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+
+        <li><a href="attendance.html">Attendance</a></li>
+
+        <li><a href="timetable.html">Timetable</a></li>
+
+        <li><a href="assignments.html">Assignments</a></li>
+
+        <li><a href="campusmap.html">Campus Map</a></li>
+    
+        <li><a href="gpa.html">GPA</a></li>
+
+        <li><a href="events.html">Events</a></li>
+    
+    </ul>
+
+  </nav>
+
+<header>
+
+   <h1>Dashboard</h1>
+
+   <p>Your smart student companion for NSUT.</p>
+
+</header>
+
+<main>
+
+    <!-- Welcome Card -->
+
+   <section class="dashboard-card welcome-card">
+
+    <h2 id="welcomeTitle">👋 Welcome Back!</h2>
+
+    <p id="welcomeMessage">
+        Loading your dashboard...
+    </p>
+
+    <div class="welcome-stats">
+
+        <div>
+
+            <h3>📚 Subjects</h3>
+
+            <p id="subjectCount">0</p>
+
+        </div>
+
+        <div>
+
+            <h3>📝 Pending</h3>
+
+            <p id="pendingAssignments">0</p>
+
+        </div>
+
+        <div>
+
+            <h3>📊 Attendance</h3>
+
+            <p id="dashboardAttendance">0%</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Today's Summary -->
+
+    <section class="dashboard-card">
+
+        <div class="card-title">
+
+            <h2>📌 Today's Summary</h2>
+
+        </div>
+
+        <div id="todaySummary">
+
+            <p>Loading today's statistics...</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Upcoming Assignments -->
+
+    <section class="dashboard-card">
+
+        <div class="card-title">
+
+            <h2>📝 Upcoming Assignments</h2>
+
+        </div>
+
+        <div id="dashboardAssignments">
+
+        </div>
+
+    </section>
+
+
+
+<!-- Priority Class -->
+
+<section class="dashboard-card">
+
+    <div class="card-title">
+
+        <h2>🔥 Priority Class</h2>
+
+    </div>
+
+    <h3 id="prioritySubject">
+        No subject added yet
+    </h3>
+
+    <p id="presentCount"></p>
+
+    <p id="totalCount"></p>
+
+    <p id="mathAttendance"></p>
+
+    <p id="skipMessage"></p>
+
+    <button id="presentButton">
+
+        ✅ Present
+
+    </button>
+
+    <button id="absentButton">
+
+        ❌ Absent
+
+    </button>
+
+    <p class="priority-warning">
+
+        Add subjects to start tracking attendance.
+
+    </p>
+
+</section>
+
+
+
+    <!-- Overall Attendance -->
+
+    <section class="dashboard-card">
+
+        <div class="card-title">
+
+            <h2>📊 Overall Attendance</h2>
+
+        </div>
+
+        <h1 id="overallPercentage">
+
+            0%
+
+        </h1>
+
+        <div class="progress-bar">
+
+            <div
+                id="overallProgress"
+                class="progress-fill">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Statistics -->
+
+    <section class="dashboard-card">
+
+        <div class="card-title">
+
+            <h2>📈 Your Statistics</h2>
+
+        </div>
+
+        <div id="analytics">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Global Search -->
+
+    <section class="dashboard-card">
+
+        <div class="card-title">
+
+            <h2>🔍 Search</h2>
+
+        </div>
+
+        <div class="search-box">
+
+        <input
+            type="text"
+            id="globalSearch"
+            placeholder="Type a subject name and press Enter...">
+
+        <div id="searchResults"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- Quick Actions -->
+
+<section class="dashboard-card">
+
+    <div class="card-title">
+
+        <h2>⚡ Quick Actions</h2>
+
+    </div>
+
+    <div class="quick-actions">
+
+        <a href="attendance.html" class="quick-btn">
+
+            📚 Attendance
+
+        </a>
+
+        <a href="timetable.html" class="quick-btn">
+
+            📅 Timetable
+
+        </a>
+
+        <a href="assignments.html" class="quick-btn">
+
+            📝 Assignments
+
+        </a>
+
+        <a href="campusmap.html" class="quick-btn">
+
+            🗺 Campus Map
+
+        </a>
+
+        <a href="gpa.html" class="quick-btn">
+
+            🎓 GPA
+
+        </a>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
